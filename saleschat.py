@@ -83,7 +83,11 @@ def chatbot():
         elif user_input.startswith("Sales summary for"):
             customer_name = user_input.split("for", 1)[-1].strip()
             response = get_customer_sales_summary(customer_name, connection)
-        
+        elif user_input.startswith("Highest sold product"):
+            # Implement logic to fetch and return the highest sold product
+            # This would involve querying the database for sales data and calculating the highest sold product.
+            # For simplicity, we'll just return a placeholder response.
+            response = "The highest sold product is 'Product X'."
         else:
             response = "Sorry, I can only provide 'Invoice details for ID' or 'Sales summary for customer'."
         
