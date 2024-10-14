@@ -12,6 +12,7 @@ training_data = [
     ("What's your name?", "name_query"),
     ("Tell me your name", "name_query"),
     ("How Old are you?", "age_query"),
+    ("Where are you from?", "location_query"),
     ("Bye", "goodbye"),
     ("Goodbye", "goodbye"),
     ("Thanks", "thanks"),
@@ -32,6 +33,7 @@ responses = {
     "time_query": ["I'm sorry, I can't tell the time right now.", "I don't have access to a clock at the moment."],
     "default": ["I'm not sure how to respond to that.", "Can you please clarify?"],
     "age_query": ["I am 52 Years old."],
+    "location_query": ["I am from India."],
 }
 
 # Preprocess user input
